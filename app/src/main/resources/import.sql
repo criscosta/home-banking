@@ -1,0 +1,3 @@
+INSERT INTO BOLETO(id, vencimento, valor) VALUES (1, DATEADD('DAY',-7, CURRENT_DATE), 10);
+INSERT INTO BOLETO(id, vencimento, valor) VALUES (2, DATEADD('DAY',-2, CURRENT_DATE), 20);
+INSERT INTO BOLETO(id, vencimento, valor) VALUES (3, CURRENT_TIMESTAMP(), 30);
