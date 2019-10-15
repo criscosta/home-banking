@@ -9,9 +9,9 @@ import javax.ws.rs.core.MediaType;
 public class BoletoResource {
 
     @GET
-    @Path("recalcular")
+    @Path("{boletoId}/recalcular")
     @Produces(MediaType.TEXT_PLAIN)
-    public String recalcular() {
+    public String recalcular(@PathParam("boletoId") Long boletoId) {
         return "recalcular";
     }
 }
